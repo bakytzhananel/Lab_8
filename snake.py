@@ -63,8 +63,7 @@ while running:
     if snake_pos == food_pos:
         score += 1
         food_spawn = False
-        snake_body.append([0, 0])
-    
+        
     if not food_spawn:
         food_pos = [random.randrange(1, WIDTH // CELL_SIZE) * CELL_SIZE,
                     random.randrange(1, HEIGHT // CELL_SIZE) * CELL_SIZE]
